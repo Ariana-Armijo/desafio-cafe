@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    font-family: PT Mono;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu__logo img {
+    height: 50px;
+    /* Ajusta el tamaño del logo */
+}
+
+.menu__nav {
+    display: flex;
+    gap: 80px;
+    width: 50%;
+}
+
+.menu__nav-item {
+    text-decoration: none;
+    color: #989797;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu__nav-item:hover {
+    color: #007bff;
+    /* Color del texto al pasar el ratón sobre el enlace */
+    justify-content: flex-start;
+}
+
+.menu__auth {
+    display: flex;
+    gap: 10px;
+}
+
+.menu__auth-button {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: PT Mono;
+}
+
+.menu__auth-button--login {
+    background-color: transparent;
+    color: #989797;
+    /* Color del texto del botón de inicio de sesión */
+    border: 2px solid #989797;
+    /* Borde del botón de inicio de sesión */
+}
+
+.menu__auth-button--login:hover {
+    background-color: #e9ecef;
+    /* Color de fondo al pasar el ratón sobre el botón de inicio de sesión */
+}
+
+.menu__auth-button--register {
+    background-color: #28a745;
+    /* Color de fondo del botón de registro */
+    color: white;
+    /* Color del texto del botón de registro */
+}
+
+.menu__auth-button--register:hover {
+    background-color: #218838;
+    /* Color de fondo al pasar el ratón sobre el botón de registro */
+}
+
+/* Banner principal */
+.content-section {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente los elementos dentro del contenedor */
+    padding: 20px;
+    border: 1px solid #ddd;
+    /* Borde alrededor de la sección */
+    background-color: #ffffff;
+    /* Color de fondo de la sección */
+}
+
+.content-section__imagen img {
+    flex: 0 0 auto;
+    /* No permite que la imagen se estire o reduzca su tamaño */
+    margin-right: 20px;
+    /* Espacio entre la imagen y el texto */
+    position: relative;
+}
+
+.content-section__text {
+    flex: 1;
+    /* Permite que el texto ocupe el espacio restante disponible */
+}
+
+.content-section__text h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    /* Espacio entre el título y el párrafo */
+    font-size: 80px;
+    /* Tamaño de fuente del título */
+}
+
+.content-section__text p {
+    margin: 0;
+    /* Elimina el margen por defecto del párrafo */
+    font-size: 16px;
+    /* Tamaño de fuente del párrafo */
+    line-height: 1.5;
+    /* Espaciado entre líneas del párrafo */
+}
+
+.content-section__cuadro {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 23px;
+}
+
+.content-section__cuadro_amarillo {
+    width: 9vw;
+    height: 9vw;
+    background-color: #eacb31;
+    margin-top: 10px;
+}
+
+.content-section__cuadro_naranjo {
+    width: 9vw;
+    height: 9vw;
+    background-color: #e4572e;
+    left: -10px;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    font-size: 5.5vw;
+}
+
+
+.segunda-seccion {
+    display: flex;
+    margin: 0;
+}
+
+.segunda-seccion__texto {
+    width: 50%;
+    margin: auto;
+    margin: 18px 36px 26px 38px
+}
+
+.segunda-seccion__texto {
+    max-width: 100%;
+    /* Asegura que la imagen no se desborde del contenedor */
+    height: auto;
+    /* Mantiene la relación de aspecto de la imagen */
+}
+
+.segunda-seccion--imagenMapa img {
+    max-width: 100%;
+    /* Asegura que la imagen no se desborde del contenedor */
+    width: 80%;
+    position: relative;
+}
+
+.segunda-seccion--imagengranos img {
+    display: flex;
+    position: relative;
+    right: 0;
+    width: 40%;
+    align-items: stretch;
+
+}
+
+.segunda-seccion--imagenCafe img {
+    display: flex;
+    max-width: 90%;
+    /* Asegura que la imagen no se desborde del contenedor */
+    height: 100%;
+    /* Mantiene la relación de aspecto de la imagen */
+}
+
+.segunda-seccion--CuadroAzul {
+    background-color: #007bff;
+   // display: flex;
+    width: 92vw;
+    height: 12vw;
+    margin-top: 0px;
+    //position: relative;
+}
+
+.contador {
+    display: flex;
+    position: absolute;
+    left: 413px;
+    top: 70%;
+    transform: translateY(-50%);
+    color: rgb(26, 26, 26);
+    /* Cambia el color según el fondo */
+    padding: 10px;
+    font-size: 24px;
+    /* Ajusta el tamaño del texto si es necesario */
+    background: rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    align-items: left;
+    gap: 20px;
+    font-size: 16px;
+}
